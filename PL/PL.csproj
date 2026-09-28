@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	<BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
+    <OutputPath>$(SolutionDir)\bin\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+	<ApplicationIcon>zara.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1358046406_2_7_2.jpg" />
+    <None Remove="4623049637_2_7_6.jpg" />
+    <None Remove="6566724251_2_7_2.jpg" />
+    <None Remove="back-image.jpg" />
+    <None Remove="Cart\HOME.png" />
+    <None Remove="Cart\zara-home.png" />
+    <None Remove="Cart\Zara-Logo-1975.png" />
+    <None Remove="Images\back-image.jpg" />
+    <None Remove="Images\key-icon.png" />
+    <None Remove="Images\user-icon.png" />
+    <None Remove="Images\zara-home.png" />
+    <None Remove="user-icon.png" />
+    <None Remove="welcome.jpg" />
+    <None Remove="Zara-Logo-1975.png" />
+    <None Remove="zarahome.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="zara.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1358046406_2_7_2.jpg" />
+    <Resource Include="4623049637_2_7_6.jpg" />
+    <Resource Include="6566724251_2_7_2.jpg" />
+    <Resource Include="back-image.jpg" />
+    <Resource Include="Cart\HOME.png" />
+    <Resource Include="Cart\zara-home.png" />
+    <Resource Include="Cart\Zara-Logo-1975.png" />
+    <Resource Include="Images\back-image.jpg" />
+    <Resource Include="Images\key-icon.png" />
+    <Resource Include="Images\user-icon.png" />
+    <Resource Include="Images\zara-home.png" />
+    <Resource Include="user-icon.png" />
+    <Resource Include="welcome.jpg" />
+    <Resource Include="Zara-Logo-1975.png" />
+    <Resource Include="zarahome.png" />
+  </ItemGroup>
+
+</Project>

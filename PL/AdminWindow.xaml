@@ -1,0 +1,36 @@
+﻿<Window x:Class="PL.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow"
+        Title="AdminWindow" Height="550" Width="800">
+    <Grid  Background="#FFFCEFEC">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border CornerRadius="30" Grid.Row="0" BorderThickness="2" Margin="10,8,604,4" BorderBrush="#FF6B6866">
+            <Border.Background>
+                <ImageBrush ImageSource="/zarahome.png"/>
+            </Border.Background>
+        </Border>
+        <Button x:Name="btnHome" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="42" Width="40" Click="btnHome_Click" Background="#FFFAF6F4" Margin="741,0,0,0" >
+            <Image Source="/Cart/HOME.png" Height="41" Width="40" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Button>
+        <Label x:Name="lblWelcome" Content="Welcome Manager" FontFamily="Narkisim" HorizontalAlignment="Left" FontSize="33" Foreground="#FF934326" Margin="285,0,0,0" VerticalAlignment="Center" Height="41" FontWeight="Bold" Width="273"/>
+        <Button x:Name="BtnOrderList" Grid.Row="1" Content="List Of Orders" HorizontalAlignment="Left" Margin="531,184,0,0" Height="64" Width="196" FontSize="20" VerticalAlignment="Top" Click="BtnOrderList_Click"/>
+        <Button x:Name="BtnProductList" Grid.Row="1" Content="List Of Products" HorizontalAlignment="Left" Margin="531,100,0,0" VerticalAlignment="Top" Click="BtnProductList_Click" FontFamily="Segoe UI Black" Height="64" Width="196" FontSize="20" Background="#FFD8BCB2" BorderBrush="#FF934326" Foreground="#FF6B6866"/>
+        <Button x:Name="BtnAddManager" Grid.Row="1" Content="Add Admin Access" HorizontalAlignment="Left" Margin="531,265,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Height="64" Width="196" FontSize="20" Background="#FFD8BCB2" BorderBrush="#FF934326" Foreground="#FF6B6866" Click="BtnAddManager_Click"/>
+        <Button x:Name="btnSimulation" Content="Orders Progress"  Grid.Row="1" HorizontalAlignment="Left" Margin="531,352,0,0" VerticalAlignment="Top" Height="64" Width="196" FontSize="20" Click="btnSimulation_Click"/>
+        <Image HorizontalAlignment="Left" Height="168" Margin="0,296,0,0" VerticalAlignment="Top" Width="242" Source="/welcome.jpg" Grid.Row="1"/>
+        <Border  CornerRadius="15" Grid.Row="1" BorderThickness="1.5" Margin="0,47,314,0" BorderBrush="#FF6B6866">
+            <Border.Background>
+                <ImageBrush ImageSource="/welcome.jpg"/>
+            </Border.Background>
+        </Border>
+    </Grid>
+</Window>
